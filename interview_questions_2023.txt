@@ -1,0 +1,24 @@
+Moveinsync: ->
+
+1. Dynamic component 
+2. Create simlar to google calender right side page.
+3. javascript pattern which all pattern you have used ?
+4. Angular elements?
+5. Difference between subject and observable?
+6. what is the benifit of standalone component.
+7. What is Angular elements.
+8.takeuntill?
+9. Pipe?
+
+
+HCL Angular Lead:
+1. What are dynamic components ?
+2. Create reactive form in angular IDE.
+3. can you create custom pipe,directive ?
+4. have you worked on ngRx? if yes please explain the flow?
+5. What is effect in ngRx.
+
+Ascentbusiness :
+1. What is the difference between formBuilder and formGroup?
+2. NgRx? and tell me the lifecycle hook also?
+3.  javascript pattern ?

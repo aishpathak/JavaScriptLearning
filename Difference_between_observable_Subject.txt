@@ -1,0 +1,35 @@
+Observable are very useful to handle a variety of common asynchronous operations 
+ but its default behaviour(unicast) can't be used in all scenarios.
+
+ /////////////////////////////RxJs Subject////////////////////////////////////////
+
+ Observable are unicast
+
+ Subjects are multicast
+
+ Unicasting -> means that each subscribed observer owns an independent execution of the Observable.
+
+              while Observable are unicast by design,this can be pretty annoying if you expect that each subscriber recives the same values.
+
+ Multicast: -> Subjects can multicast
+               Multicasting basically means that one Observable execution is shared among multiple subscribers.
+               Subjects are like EventEmitters ,they maintain a registy of many listeners.
+
+
+   const subject = new Subject();
+
+    //Subscriber1
+    subject.subscribe(d=>console.log(d));
+    //Subscriber2
+    subject.subscribe(d=>console.log(d));
+
+    subject.next(Math.random());
+
+
+    // Observable are unicast
+    // const observable = new Observable(obj=>obj.next(Math.random));
+    // //subscriber1
+
+    // observable.subscribe(d=>console.log(d));
+    // //subscriber2
+    // observable.subscribe(d=>console.log(d));

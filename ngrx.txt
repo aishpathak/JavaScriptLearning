@@ -1,0 +1,33 @@
+
+
+ngRx is a frameworkforreactiveangular application
+Now implementing ngrx in the application
+Install store-> npm install @ngrx/store
+
+1. now create state-> named counter.state.this
+    const initialState = {
+        counter: 0;
+    }
+
+2. Create Action
+    counter.actions.ts
+
+    export const increment = createAction('increment');
+    export const decrement = createAction('decrement');
+    export const reset = createAction('reset')
+
+3. create reducer-> reducer will decide upon calling action what is the thing i need to do.
+
+    const _counterReducer = createReducer(
+        initialState,
+        on(increment,(state)) =>{
+            return {
+                ...state,
+                counter: state.counter + 1, 
+            }
+        }
+    );
+
+     export function counterReducer(state,action){
+        return _counterReducer(state,sction)
+    }

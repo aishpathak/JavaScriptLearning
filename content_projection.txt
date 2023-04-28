@@ -1,0 +1,10 @@
+to project some unique html from the template of the parent component , you need to add content between the opening and closing tags of the tested child component.
+<app-product-widget>
+<h3>Clearence store</h3>
+</app-product-widget>
+
+now in child -->
+<div>
+    <ng-content></ng-content>
+    <p>Some random data </p>
+</div>
