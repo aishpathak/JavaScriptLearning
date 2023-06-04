@@ -46,3 +46,19 @@ function roateArray(a,k){
     return [originalArray,a];
 }
 console.log(roateArray([5,2,3,-1,6,1,2],3));
+
+//[5,2,3,-1,6,1,2]
+//2,5,2,3,-1,6,1 k=1
+//1,2,5,2,3,-1,6,k=2
+//6,1,2,5,2,3,-1,k=3
+//-1,6,1,2,5,2,3,k=4
+//3,`````````````,k=5
+//2,             ,k=6
+//5,2,3          ,k=6
+//if k=>n => k= k%n=ans that much rotation we need to do
+//k= 7%7 = 0
+// k=8%7 = 1
+//k=9%7 = 2
+//k=10%7 = 3
+
+//So if k>n, then we need to do k = k%n rotation
