@@ -1,0 +1,19 @@
+step1: in app.module.ts--> 
+         1. const routes:Routes  = [
+            {path:'home',component:HomeCOmponent},
+            {path:'about', loadChildren()=>imports()./home/home.module).then(m=>m.HomeModule)}}
+         ]
+         2. in imports[
+            RouterModule.forRoot(routes)
+         ]
+step2: if its feature module then 
+    HomeModule.ts we need to do.
+    1.  1. const routes:Routes  = [
+            {path:'',component:HomeComponent},
+         ]
+    2. imports[
+            RouterModule,forChildRoute(routes)
+         ]
+
+step:3
+<router-outlet></router-outlet>

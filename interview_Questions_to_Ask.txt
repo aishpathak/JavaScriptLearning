@@ -1,0 +1,49 @@
+1. Shadow Dom
+2. what is AOT Compilation, how it work.. Kiase build size decrease ho jata hai.
+3. Angular Performance.
+4. Angular security related questions.
+5. Reactive form, what is the difference between setValue and patchValue.
+6. zone Js in Angular.
+7. Routing practical Question.
+8. Dynamic Component.
+9. lazy loading
+10. callback function: A callback function is a function which will be passed as an argument to another function
+            which is then invoked from outer function to complete some task.
+            
+const element = doucment.querySelector("input");
+function outcome(){
+    console.log("data recieved from server");
+}    
+function debounce(fn,timeout){
+    return fucntion(){
+        fn();
+    }
+} 
+
+
+
+Javascript: 
+1. Closure, real life me closure kha use karoge?
+2. prototype
+3. Inheritance
+4. Event Loop
+5. multidimentional Array ko single dimentional array me change karna then sort.
+6. Programing questions.
+7. Give multidimentional Array and ask to change it to single array.
+
+
+
+CSS:
+1. Psudo elements, Psudo classes.
+2. position properties.
+3. what all properties are there in flex elements... flex wrap,direction
+4. mixins
+
+
+
+
+
+
+
+
+

@@ -34,26 +34,53 @@
 
 // removeDuplicate([2,3,1,2,3],5)
 
-function toFindDuplicates(arryy) {
-    // let arryy = arry.sort();
+function toFindDuplicates(arry) {
+    let arry = arry.sort();
     let a = [];
     let toMap = {};
-    for (let i = 0; i < arryy.length; i++) {
+    for (let i = 0; i < arry.length; i++) {
 
-        if (toMap[arryy[i]] && !a.includes(arryy[i])) {
-            a.push(arryy[i]);
+        if (toMap[arry[i]] && !a.includes(arry[i])) {
+            a.push(arry[i]);
         }
 
-        toMap[arryy[i]] = true;
+        toMap[arry[i]] = true;
     }
     if(a.length>0){
     console.log(a);
     return a;
     }
     else{
-        console.log(-1);
         return -1;
     }
     }
-    let arry = [26,13,9,25,1,1,0,22,13,22,20,3,8,11,25,10,3,15,11,19,20,2,4,25,14,23,14];
+    // let arry = [26,13,9,25,1,1,0,22,13,22,20,3,8,11,25,10,3,15,11,19,20,2,4,25,14,23,14];
+
+    // second approach
     toFindDuplicates(arry);
+
+
+    function toFindDuplicates(arryy) {
+        // let arryy = arry.;
+        // let a = [];
+        let toMap = {};
+        for (let i = 0; i < arryy.length; i++) {
+    
+            if (arryy[i] in toMap) {
+                toMap[arryy[i]] += 1
+            }
+            else{
+                toMap[arryy[i]] = 1
+            }
+        }
+        for (var key in toMap) {
+            if(toMap[key]>1){
+                console.log(key);
+            }
+            // console.log(key, toMap[key]);
+          }
+        // console.log(toMap);
+        }
+        // let arry = [26,13,9,25,1,1,0,22,13,22,20,3,8,11,25,10,3,15,11,19,20,2,4,25,14,23,14];
+        let arry = [5,3,5,1,2,7];
+        toFindDuplicates(arry);

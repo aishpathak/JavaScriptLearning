@@ -1,0 +1,117 @@
+Moveinsync: ->
+
+1. Dynamic component 
+2. Create simlar to google calender right side page.
+3. javascript pattern which all pattern you have used ?
+4. Angular elements?
+5. Difference between subject and observable?
+6. what is the benifit of standalone component.
+7. What is Angular elements.
+8.takeuntill?
+9. Pipe?
+
+
+HCL Angular Lead:
+1. What are dynamic components ?
+2. Create reactive form in angular IDE.
+3. can you create custom pipe,directive ?
+4. have you worked on ngRx? if yes please explain the flow?
+5. What is effect in ngRx.
+
+Ascentbusiness :
+1. What is the difference between formBuilder and formGroup?
+2. NgRx? and tell me the lifecycle hook also?
+3.  javascript pattern ?
+
+Synchoron Dubai:
+1. Shadow Dom in Angular. What is emulated ?
+2. What this in javascript point by default?
+3. .container+.child
+4. Closure
+5. lixical scope.
+
+XYram Angular Lead:
+1. const str = 'Javascript is a great language', Count the charcter in an array. 
+2. Difference between spread and rest operator ?
+3. What is the difference between spread and rest operator ?
+ function myBio(firstName,lastName,...data){ // this is rest operator
+    return data;
+ }
+ myBio("Aish","Pathak","Gorakhpur","UP","India");
+4. Spread Operator:
+   Spread operator we used to spread out the value
+   let a = ["JavaScript is a good language"];
+   console.log(...a);
+   // Output : JavaScript is a good language
+5. Count the number of occurance of each element in an array?
+    --> can check implementation below.
+
+
+
+Random Company:
+1.lixical scope.
+2. Closure
+3. function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+const myFunc = makeFunc();
+myFunc(); what will be the output and why ?
+
+4. function init() {
+  var name = "Mozilla";
+  function displayName() {
+    console.log(name); 
+  }
+  displayName();
+}
+init();
+5. 
+function makeAdder(x) {
+  return function (y) {
+    return x + y;
+  };
+}
+const add5 = makeAdder(5);
+const add10 = makeAdder(10);
+console.log(add5(2));
+console.log(add10(2));
+
+
+
+What I need to prepare:
+1. Create Reactive form and create reactive form using form group and formbuilder.
+2. Create Dynamic Component
+3. Create application and use ngRx. What is effect in ngRx.
+4. Use Flex and understand how to use.
+5.Javascript pattern
+6. check angular 14 new feature and why we need that ?
+7. Lexical environment.
+
+
+
+/// Solution///////
+//const str = 'Javascript is a great language', Count the charcter in an array. 
+
+const str = 'Javascript is a great language';
+
+
+function getCount(str){
+    obj={};
+	str = str.split('');
+	let count =0;
+	str.forEach(function(el){
+	    if(!obj[el]){
+	        obj[el] = 1;
+	    }
+	    else{
+	        obj[el] = obj[el]+1
+	    }
+	})
+		    console.log(obj);
+}
+
+console.log(getCount(str));

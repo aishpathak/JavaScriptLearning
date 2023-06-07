@@ -1,0 +1,18 @@
+interceptors are a unique type of angular Service to which we can implement to intercept incoming or outgoing HTTP requests using the HttpClient
+
+various operations using interceptors:
+1. Modify HTTP Headers
+2. Modifying the request body.
+3. Set authentication/authorization token
+4. Mock the backend api
+5. modify the response
+6. Error handling
+
+in interceptor service we have HttpInterceptor interface which have intercept method which we need to implement.
+and in intercept method we can pass two parameter(request: HttpRequest ,next: HttpHandler), we return next.handle after our logic.
+we can modify request object but as it is imutable class we have to clone the object then we can modify
+const req= request.clone({
+    setHeaders:{
+        API_KEy,
+    }
+}) 

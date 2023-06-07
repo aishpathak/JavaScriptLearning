@@ -1,0 +1,30 @@
+FormControl
+FormGroup
+FormArray
+ControlValueAccessor
+
+FromControl: 
+
+1. FormCotrol is a class that enables validations.
+2. Each instance of this class help to check the value of the field whether it is touched,untouched,dirty,pristrine etc.
+
+FormGroup: 
+
+1. FormGroup class represents a group of controls.
+2. FormGroup can have multiple FormControls.
+3. FormCotrol returns true if all controls are valid.
+
+
+FormArray: 
+
+1. FormGroup class represents a group of controls.
+2. FormArray is used to create dynamic controls.
+
+ControlValueAccessor: creates a bridge between Angular FormCOntrol instances and native DOM elements.
+
+When to choose reactive forms: 
+
+1. Handling complex forms
+2. Following reactive approach
+3. dynamic controls
+4. lots of validations/custom validations.

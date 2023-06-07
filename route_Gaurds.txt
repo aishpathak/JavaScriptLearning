@@ -1,0 +1,20 @@
+-->Gaurds: Route gaurds are interfaces which tell the router whether or not it should allow navigate to a requested route.
+
+--> Guard Function: can return either a boolean or Observable<boolean> or Promise<boolean> which resolve to a boolean at some point in the future.
+
+Gaurds: basically implemented like a service.All services in angular should be registered in providers array.
+
+    1. CanActivate: we use before visiting a route to check if the user is authenticated or not. to check if the user should access the route or not ?
+                    
+    2. CanActivateChild: Similar to CanActivate it  is to check if as user can visit a routes children.
+
+    3. CanDeactivate: can use before leaving the route. suppose we have some unsaved changes we can ask for confirmation from user before leaving the route.
+
+    4. Resolve: We want to have some data before visiting the targated component.In that case until the data not get resolve the route will wait.
+                performs route data retrieval before route activation.
+
+    5. CanLoad:Checks to see if a user can route to a module that lazy loaded.
+
+
+    CanActivate: interface that a class can implement to be guard deciding if a route can be activated .
+                 if all guards returns flase, navigation will be cancelled.
