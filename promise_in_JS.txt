@@ -1,0 +1,1 @@
+Promise object is a placeholder for a certain period of time untill we recieve a value from asynchronous operation
