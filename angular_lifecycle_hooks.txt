@@ -1,0 +1,18 @@
+lifecycle hooks ->
+constructor
+ngOnChanges -> called everytime when there is a change in any @input bound property.
+ngOninit() -> this lifecycle hook is called when component is loaded and all input bound properties are set.
+	it is called only once when component is loaded into DOM. Angular implemets this interface whether you implement or not.
+if we want to add something once the component is loaded, this is the place like subscribing to data from the api
+initalize some third party lib.
+ngDocheck() -> whenever there is an change detection. it will keep on checking the values on every change detection, if any values not getting checked we can put that on ngDoCheck.
+ngAfterContentInit -> in Angular there is a way we can project content into view. this lifecycle method will be called once
+content projection is completed.
+ngAfterContentChecked -> called once after ngAfterContentInit and everytime after ngDoCheck.
+ngAfterViewInit
+ngAfterViewChecked -> called once after ngAfterContentViewinit and everytime after ngDocheck.
+
+Subject, Observable, obseravle methods,
+
+
+

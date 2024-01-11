@@ -1,0 +1,5 @@
+we can create custom html elements or web component using javascript and attach them to the DOM 
+using shadow DOM using them in a web page, 
+Shadow DOM is something which allows us to keep the custom elements seperate with their markup ,styles and 
+attached behaviour and they do not interfer with the rest of element with the  DOM. SO If you want to learn how to create 
+

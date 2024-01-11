@@ -1,0 +1,3 @@
+ngcontainer we write because it will not be added in DOM
+ngcontainer will not be added in DOM element we use this to avoid add in DOM element.
+if we want div or dvision and don't want to add that in DOM element then we use ng-container.

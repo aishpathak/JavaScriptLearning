@@ -1,0 +1,16 @@
+    const newObseravble = interval(1000);
+    newObseravble.subscribe((number)=>{
+      if(number%2 === 0){
+        console.log(number);
+      }
+    })
+    newObseravble.pipe(
+      filter((number)=>{
+        return number %2 == 0
+      }),
+      map((number)=>{
+        return 'even Number' +number
+      })
+    ).subscribe((number)=>{
+      console.log(number)
+    })

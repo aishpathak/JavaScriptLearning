@@ -1,0 +1,43 @@
+CSS Box Model?
+The CSS box model defines the layout and desgin of CSS elements.
+: The element are content(like text and images), padding(the area around content)
+: Border: The area around padding.
+: Margin: The area around the border.
+
+When should you use translate() instead of absolute positioning ?
+Translate is a css transform value. On changing opacity or transform , browser reflow or reprint is not triggered.
+
+OR 
+The transform: translate(-50%, -50%); CSS property is used to move an element horizontally and vertically by a specified 
+percentage of its own size. 
+It is often used to center an element both horizontally and vertically within its parent container.
+
+Name different ways to postion some aspcts in css
+the five different postion values are
+
+Fixed, static, Absolute, Relative, Sticky
+Absolute: it will be postioned based on its first parent , if parent doesn't have any postion given then it will be moved based on body.
+
+Relative : it will be postioned based on its noramal postion. where it was previously it will mobve 50 px left right whatever you will give
+
+Fixed : the browser is postioned related to browser Window.
+
+Sticky: browser is postioned based on the user scroll's postion.
+
+Mixins: mis=xins is similar to function block of code. misins let you make group of css declaration that you want to 
+reuse throught your site. It helps keep your SASS very dry 
+
+@mixin important-text {
+    color:red;
+    font-size: 25 px;
+    font weight: bold;
+    border: 1 px solid blue;
+}
+
+psudo elements is used to style specified part of an elements.
+-> style the first line or letter of an element
+-> insert content before or after the content of an element.
+
+What are thr properties of flexbox:
+flexbox are designed for alignment purpose 
+properties of flextbox are flext-direction,wrap,flow,content and align-items, and content.

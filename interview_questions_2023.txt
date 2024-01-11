@@ -1,22 +1,32 @@
+ॐ कृष्णाय वासुदेवाय हरये परमात्मने॥ प्रणत: क्लेशनाशाय गोविंदाय नमो नम:॥
+
+1. Dynamic Component: Done
+2. What is Gaurd in Angular: Done
+3. Reactive Form: Done
+4. JWT Token: Done
+5. Authentication: We check identitiy of a user(username,pass),Authurisation: check given permission
+6. Routing: Done
+7. 
+
 Moveinsync: ->
 
-1. Dynamic component 
-2. Create simlar to google calender right side page.
+1. Dynamic component  : Done
+2. Create simlar to google calender right side page. Done
 3. javascript pattern which all pattern you have used ?
-4. Angular elements?
+4. Angular elements?: Still Not Clear
 5. Difference between subject and observable?
 6. what is the benifit of standalone component.
-7. What is Angular elements.
-8.takeuntill?
-9. Pipe?
+7. What is Angular elements. Angular elements are webcomponents we create.
+8. takeuntill?
+9. Pipe? : Done
 
 
 HCL Angular Lead:
-1. What are dynamic components ?
-2. Create reactive form in angular IDE.
-3. can you create custom pipe,directive ?
-4. have you worked on ngRx? if yes please explain the flow?
-5. What is effect in ngRx.
+1. What are dynamic components ? Done
+2. Create reactive form in angular IDE. Done
+3. can you create custom pipe,directive ? 
+4. have you worked on ngRx? if yes please explain the flow? no
+5. What is effect in ngRx. 
 
 Ascentbusiness :
 1. What is the difference between formBuilder and formGroup?
@@ -115,3 +125,6 @@ function getCount(str){
 }
 
 console.log(getCount(str));
+
+
+observable , ngrx, 
